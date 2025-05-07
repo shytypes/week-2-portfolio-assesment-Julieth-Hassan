@@ -17,11 +17,133 @@
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
-    <!-- Header Area -->
-    <header></header>
+    <header>
+      <section>Welcome To My Portfolio</section><section> <img src="assets/images/jul.png"  width="150" height="150"/></section>
+      <div>
+        <h1>Julieth Hassan Ally   
+        </h1> 
+        <p>Dar es Salaam, Tanzania | Email: <a href="mailto:julieth74za@gmail.com">julieth74za@gmail.com</a> | Phone: +255-623-443-403 | LinkedIn: <a href="https://www.linkedin.com/in/julieth-hassan-ally/" target="_blank"> linkedin.com/in/julieth-hassan-ally
+          </a>  </p>
+      </div>
+    </header>
+
     <!-- Main Area -->
     <main>
-      <h1>My Amazing Portfolio</h1>
+      <section class="summary">
+        <h2>Summary</h2>
+        <p>
+          Proactive and detail-oriented Certified Salesforce Administrator based in Tanzania with hands-on experience in data quality management, user support, and customizing Salesforce CRM for optimized business workflows. Strong communicator, fast learner, and committed team player passionate about helping African businesses grow through tech-driven solutions.
+        </p>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <p><strong>African Leadership Xcelerator (ALX Africa)</strong><br>Salesforce Administration | 2024</p>
+      </section>
+
+      <section class="experience">
+        <h2>Experience</h2>
+        <p><strong>Salesforce Admin Apprenticeship</strong><br>Clicked Salesforce Program — Sep 2024 - Dec 2024</p>
+        <ul>
+          <li>Managed Salesforce data using SOQL for reporting and analytics.</li>
+          <li>Collaborated in team sprints to deliver Salesforce-based business solutions.</li>
+          <li>Developed expertise in Salesforce Administration and Business Analysis.</li>
+        </ul>
+
+        <p><strong>Salesforce Admin Apprenticeship</strong><br>ALX Salesforce Program — Mar 2024 - Oct 2024</p>
+        <ul>
+          <li>Customized Salesforce to improve efficiency through automation and workflows.</li>
+          <li>Assisted in data management, user training, and process optimization.</li>
+          <li>Built a professional network and contributed insights to support colleagues.</li>
+        </ul>
+      </section>
+
+      <section class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Salesforce Admin Certification</li>
+          <li>Salesforce AI Specialist</li>
+          <li>Salesforce AI Associate Certification</li>
+          <li>Salesforce Associate Certification</li>
+          <li>Artificial Intelligence Fundamentals Certificate</li>
+          <li>Airtable Administrator</li>
+        </ul>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <p><strong>Real Estate CRM Optimization</strong></p>
+        <ul>
+          <li>Designed and implemented a Salesforce CRM for real estate agents.</li>
+          <li>Automated lead tracking, integrated Gmail, and improved client management.</li>
+        </ul>
+        <p><strong>Appointment Scheduler App</strong></p>
+        <ul>
+          <li>Developed a Salesforce-based scheduling system with automation features.</li>
+          <li>Improved appointment tracking and streamlined meeting management.</li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <div class="skills-wrapper">
+          <div class="technical">
+            <h2>Technical Skills</h2>
+            <ul>
+              <li>Salesforce Administration</li>
+              <li>Custom Objects & Fields</li>
+              <li>Lightning App Builder</li>
+              <li>Reports and Dashboards</li>
+              <li>Security & Access</li>
+              <li>Import/Export</li>
+              <li>Data Quality</li>
+              <li>Deduplication</li>
+              <li>End-User Training & Support</li>
+              <li>Data Management</li>
+            </ul>
+          </div>
+          <div class="soft">
+            <h2>Soft Skills</h2>
+            <ul>
+              <li>Time Management</li>
+              <li>Problem-Solving</li>
+              <li>Collaboration</li>
+              <li>Attention to Detail</li>
+              <li>Adaptability</li>
+              <li>Organizational Skills</li>
+              <li>Multitasking</li>
+              <li>Communication</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
     </main>
+    <section class="contact-form">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required />
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+    
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required />
+    
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+    
+        <button type="submit">Send Message</button>
+      </form>
+    
+      <h3>Submitted Info:</h3>
+      <ul id="result-view"></ul>
+      <script src="script.js"></script>
+      
+    </section>
+
+    
   </body>
+  
+  
 </html>

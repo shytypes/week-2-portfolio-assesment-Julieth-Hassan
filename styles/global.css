@@ -1,8 +1,166 @@
 /* remove default browser spacing*/
-* {
-  margin: 0px;
-  padding: 0px;
+* body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
 }
+
+/* page layout container */
+.container {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* HEADER STYLING */
+header {
+  display: flex;
+  flex-wrap: wrap; /* allow content to move to new line on small screens */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+/* welcome section at top */
+header section:first-child {
+  flex: 1 1 100%;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #fbc02d;
+  text-align: center;
+}
+
+/* image in header */
+header section img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #444;
+}
+
+/* name and contact info */
+header div {
+  flex: 1 1 60%;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* contact links */
+a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* spacing between sections */
+section {
+  margin-top: 20px;
+}
+
+/* section titles */
+h2 {
+  color: #fbc02d;
+  margin-bottom: 10px;
+}
+
+/* skills section */
+.skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-wrapper .technical,
+.skills-wrapper .soft {
+  width: 48%;
+}
+@media (max-width: 600px) {
+  .skills-wrapper .technical,
+  .skills-wrapper .soft {
+    width: 100%;
+  }
+}
+
+
+ul {
+  padding-left: 20px;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #fbc02d;
+  color: #1e1e1e;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ffa000;
+}
+#result-view {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #222;
+  border-radius: 5px;
+  color: #eee;
+  list-style: none;
+}
+
+#result-view li {
+  margin-bottom: 5px;
+}
+
+
 
 /*title text style*/
 /* the font-family 'JetBrains Mono', has been linked
